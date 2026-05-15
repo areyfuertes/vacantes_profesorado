@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Vacantes funcionario mapa</title>
+    <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar">
+        <header class="app-header">
+          <div>
+            <p class="eyebrow">Plazas de funcionario</p>
+            <h1>Vacantes docentes</h1>
+          </div>
+          <div class="summary">
+            <strong id="summaryTotal">0</strong>
+            <span>vacantes</span>
+          </div>
+        </header>
+
+        <section class="panel filters">
+          <div class="field">
+            <label for="q">Buscar</label>
+            <input id="q" type="search" placeholder="Centro, municipio, especialidad" />
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="th_id_combo">Territorio</label>
+              <input id="th_id_combo" class="combo-input" type="search" list="th_id_options" placeholder="Todos" />
+              <datalist id="th_id_options"></datalist>
+              <select id="th_id" class="native-select"></select>
+            </div>
+            <div class="field">
+              <label for="municipio_id_combo">Municipio</label>
+              <input id="municipio_id_combo" class="combo-input" type="search" list="municipio_id_options" placeholder="Todos" />
+              <datalist id="municipio_id_options"></datalist>
+              <select id="municipio_id" class="native-select"></select>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="localidad_id_combo">Localidad</label>
+              <input id="localidad_id_combo" class="combo-input" type="search" list="localidad_id_options" placeholder="Todas" />
+              <datalist id="localidad_id_options"></datalist>
+              <select id="localidad_id" class="native-select"></select>
+            </div>
+            <div class="field">
+              <label for="level_id_combo">Nivel</label>
+              <input id="level_id_combo" class="combo-input" type="search" list="level_id_options" placeholder="Todos" />
+              <datalist id="level_id_options"></datalist>
+              <select id="level_id" class="native-select"></select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="teacher_body_combo">Cuerpo</label>
+            <input id="teacher_body_combo" class="combo-input" type="search" list="teacher_body_options" placeholder="Todos" />
+            <datalist id="teacher_body_options"></datalist>
+            <select id="teacher_body" class="native-select"></select>
+          </div>
+
+          <div class="field">
+            <label for="specialty_code_combo">Especialidad</label>
+            <input id="specialty_code_combo" class="combo-input" type="search" list="specialty_code_options" placeholder="Todas" />
+            <datalist id="specialty_code_options"></datalist>
+            <select id="specialty_code" class="native-select"></select>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="vacancy_column">Contar</label>
+              <select id="vacancy_column"></select>
+            </div>
+            <label class="check-row">
+              <input id="only_available" type="checkbox" checked />
+              <span>Solo con plazas</span>
+            </label>
+          </div>
+        </section>
+
+        <section class="panel home-panel">
+          <div class="field">
+            <label for="homeAddress">Casa</label>
+            <div class="inline-field">
+              <input id="homeAddress" type="search" placeholder="Dirección o municipio" />
+              <button id="geocodeHome" type="button">Buscar</button>
+            </div>
+            <div id="homeResults" class="home-results"></div>
+          </div>
+          <div class="field-grid">
+            <button id="useLocation" type="button">Mi ubicación</button>
+            <button id="clearHome" type="button">Quitar casa</button>
+          </div>
+          <div class="field">
+            <label for="radius_km">Radio <span id="radiusValue">40 km</span></label>
+            <input id="radius_km" type="range" min="5" max="200" value="40" step="5" />
+          </div>
+          <p id="homeStatus" class="status"></p>
+        </section>
+
+        <section class="results-head">
+          <div>
+            <strong id="centerCount">0 centros</strong>
+            <span id="rowCount">0 filas</span>
+          </div>
+        </section>
+
+        <section id="centerList" class="center-list"></section>
+      </aside>
+
+      <section class="map-pane">
+        <div id="map"></div>
+        <div id="selectedPanel" class="selected-panel empty">
+          <span>Selecciona un centro</span>
+        </div>
+      </section>
+    </main>
+
+    <script src="vendor/leaflet/leaflet.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
