@@ -1,30 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Vacantes funcionario mapa</title>
+    <title>Plazas de Silvia · OPE 2026</title>
     <link rel="stylesheet" href="vendor/leaflet/leaflet.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="app-shell">
+    <div class="workspace">
+      <header class="workspace-bar">
+        <div class="workspace-brand">
+          <strong>Plazas de Silvia</strong>
+          <span>OPE 2026</span>
+        </div>
+        <nav class="workspace-tabs" aria-label="Vista principal">
+          <button id="exploreTab" class="workspace-tab active" type="button" aria-selected="true">Explorar</button>
+          <button id="boardTab" class="workspace-tab" type="button" aria-selected="false">
+            Mi lista <span id="shortlistCount" class="tab-count">0</span>
+          </button>
+        </nav>
+      </header>
+
+      <main id="exploreView" class="app-shell">
       <aside class="sidebar">
         <header class="app-header">
           <div>
-            <p class="eyebrow">Plazas de funcionario</p>
-            <h1>Vacantes docentes</h1>
+            <p class="eyebrow">Silvia Arroyo · OPE 2026</p>
+            <h1>Mapa de plazas</h1>
           </div>
           <div class="summary">
             <strong id="summaryTotal">0</strong>
-            <span>vacantes</span>
+            <span id="summaryLabel">vacantes</span>
           </div>
         </header>
 
         <section class="panel filters">
           <div class="field">
+            <label for="view_mode">Vista</label>
+            <select id="view_mode">
+              <option value="silvia">Silvia · Informatika</option>
+              <option value="vacancies">Vacantes ofertadas</option>
+              <option value="transfers">Adjudicaciones provisionales</option>
+            </select>
+          </div>
+
+          <div class="field">
             <label for="q">Buscar</label>
-            <input id="q" type="search" placeholder="Centro, municipio, especialidad" />
+            <input id="q" type="search" placeholder="Centro, municipio, código" />
           </div>
 
           <div class="field-grid">
@@ -83,6 +106,110 @@
           </div>
         </section>
 
+        <section id="silviaFilters" class="panel filters silvia-filters">
+          <div class="field">
+            <label for="silvia_subject_scope">Código</label>
+            <select id="silvia_subject_scope">
+              <option value="237">Solo 237 Informatika</option>
+              <option value="eligible">Códigos accesibles oficiales</option>
+              <option value="1910">1910 Informatika en inglés</option>
+              <option value="1585">1585 EPA científico-tecnológico</option>
+              <option value="all">Todos los cargados</option>
+            </select>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="silvia_status">Dictamen LLM</label>
+              <select id="silvia_status">
+                <option value="">Todos</option>
+                <option value="yes">Apta</option>
+                <option value="possible">Posible</option>
+                <option value="review">Revisar</option>
+                <option value="no">No apta</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="silvia_jornada">Jornada</label>
+              <select id="silvia_jornada">
+                <option value="">Todas</option>
+                <option value="full">A completa</option>
+                <option value="reduction">Reducciones</option>
+                <option value="below12">Reducción &lt;12h</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field-grid">
+            <div class="field">
+              <label for="silvia_stage">Tipo</label>
+              <select id="silvia_stage">
+                <option value="">Todos</option>
+                <option value="fp">FP</option>
+                <option value="eso_bach">ESO/Bach</option>
+                <option value="epa">EPA</option>
+                <option value="mixed">Mixto</option>
+                <option value="unknown">Sin clasificar</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="silvia_transit_max">Transporte público</label>
+              <select id="silvia_transit_max">
+                <option value="">Todos</option>
+                <option value="30">≤ 30 min</option>
+                <option value="45">≤ 45 min</option>
+                <option value="60">≤ 60 min</option>
+                <option value="75">≤ 75 min</option>
+                <option value="90">≤ 90 min</option>
+                <option value="120">≤ 120 min</option>
+              </select>
+            </div>
+          </div>
+
+          <details class="filter-more">
+            <summary>Más filtros</summary>
+            <div class="filter-more-content">
+              <div class="field-grid">
+                <div class="field">
+                  <label for="silvia_vacancy_status">Estado plaza</label>
+                  <select id="silvia_vacancy_status"></select>
+                </div>
+                <div class="field">
+                  <label for="silvia_profile">Perfil</label>
+                  <select id="silvia_profile">
+                    <option value="">Todos</option>
+                    <option value="2">PL2</option>
+                    <option value="1">PL1</option>
+                  </select>
+                </div>
+              </div>
+              <div class="field-grid">
+                <div class="field">
+                  <label for="silvia_english">Inglés</label>
+                  <select id="silvia_english">
+                    <option value="">Todos</option>
+                    <option value="requires">Requiere inglés</option>
+                    <option value="no">No requiere</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="silvia_review">Revisión</label>
+                  <select id="silvia_review">
+                    <option value="">Todas</option>
+                    <option value="flags">Con flags</option>
+                    <option value="clean">Sin flags</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </details>
+
+          <label class="check-row shortlist-filter">
+            <input id="silvia_only_listed" type="checkbox" />
+            <span>Solo plazas de mi lista</span>
+          </label>
+        </section>
+
         <section class="panel home-panel">
           <div class="field">
             <label for="homeAddress">Casa</label>
@@ -119,7 +246,71 @@
           <span>Selecciona un centro</span>
         </div>
       </section>
-    </main>
+      </main>
+
+      <main id="boardView" class="board-shell hidden">
+        <header class="board-header">
+          <div>
+            <p class="eyebrow">Selección personal</p>
+            <h1>Mi orden de plazas</h1>
+          </div>
+          <div class="board-actions">
+            <span id="boardSummary" class="board-summary">0 plazas</span>
+            <button id="importShortlist" class="secondary-action" type="button">Importar copia</button>
+            <button id="exportShortlistBackup" class="primary-action" type="button">Guardar copia</button>
+            <button id="exportShortlist" class="secondary-action" type="button">CSV</button>
+            <input id="shortlistBackupFile" class="backup-file-input" type="file" accept="application/json,.json" />
+          </div>
+        </header>
+
+        <div class="board-columns">
+          <section class="board-column column-good" data-board-column="good">
+            <header class="board-column-header">
+              <div>
+                <span class="column-marker" aria-hidden="true"></span>
+                <h2>Preferidas</h2>
+              </div>
+              <span id="goodCount" class="column-count">0</span>
+            </header>
+            <div id="goodList" class="board-list" data-board-list="good"></div>
+          </section>
+
+          <section class="board-column column-maybe" data-board-column="maybe">
+            <header class="board-column-header">
+              <div>
+                <span class="column-marker" aria-hidden="true"></span>
+                <h2>Con dudas</h2>
+              </div>
+              <span id="maybeCount" class="column-count">0</span>
+            </header>
+            <div id="maybeList" class="board-list" data-board-list="maybe"></div>
+          </section>
+
+          <section class="board-column column-no" data-board-column="no">
+            <header class="board-column-header">
+              <div>
+                <span class="column-marker" aria-hidden="true"></span>
+                <h2>Descartadas</h2>
+              </div>
+              <span id="noCount" class="column-count">0</span>
+            </header>
+            <div id="noList" class="board-list" data-board-list="no"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <dialog id="plazaDialog" class="plaza-dialog">
+      <div class="dialog-frame">
+        <header class="dialog-header">
+          <div id="dialogHeading"></div>
+          <button id="closeDialog" class="icon-button dialog-close" type="button" aria-label="Cerrar" title="Cerrar">×</button>
+        </header>
+        <div id="dialogContent" class="dialog-content"></div>
+      </div>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
     <script src="vendor/leaflet/leaflet.js"></script>
     <script src="app.js"></script>
