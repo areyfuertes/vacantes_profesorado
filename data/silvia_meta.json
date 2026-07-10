@@ -1,0 +1,850 @@
+{
+  "generated_at": "2026-07-09T13:51:32+00:00",
+  "candidate": {
+    "name": "Silvia Arroyo Calderon",
+    "subject_code": "237",
+    "subject_name": "INFORMATICA",
+    "rank": 31,
+    "rank_total": 44,
+    "has_english_accreditation": true
+  },
+  "classification_note": "Validity is an automated first pass. 'Apto claro' means explicit direct Informatika/eligible teaching hours are at least 12. 'Apto posible' reaches 12 only with ambiguous/shared hours. Rows marked 'Revisar' or 'No llega a 12h' should be checked before making decisions.",
+  "eligible_subjects": [
+    {
+      "code": "237",
+      "name": "INFORMATICA",
+      "count": 221
+    },
+    {
+      "code": "1910",
+      "name": "INFORMATICA EN INGLES",
+      "count": 6
+    },
+    {
+      "code": "1585",
+      "name": "EPA AMBITO CIENTIFICO-TECNOLOGICO",
+      "count": 25
+    },
+    {
+      "code": "1960",
+      "name": "INFORMATICA EN FRANCES",
+      "count": 0
+    }
+  ],
+  "status_labels": {
+    "valid": "Apto claro",
+    "possible": "Apto posible",
+    "review": "Revisar",
+    "invalid_hours": "No llega a 12h",
+    "invalid_reduction": "Reducción <12h"
+  },
+  "status_counts": {
+    "no": 18,
+    "review": 191,
+    "yes": 43
+  },
+  "auto_status_counts": {
+    "invalid_hours": 36,
+    "invalid_reduction": 40,
+    "possible": 2,
+    "review": 164,
+    "valid": 10
+  },
+  "stage_counts": {
+    "epa": 4,
+    "eso_bach": 71,
+    "fp": 101,
+    "mixed": 32,
+    "unknown": 44
+  },
+  "schedule_counts": {
+    "afternoon_only": 14,
+    "morning_and_afternoon": 25,
+    "morning_only": 11,
+    "night": 5,
+    "unknown": 197
+  },
+  "jornada_counts": {
+    "full": 199,
+    "reduction": 53
+  },
+  "vacancy_statuses": [
+    {
+      "value": "CAMBIO DE DESTINO",
+      "count": 2
+    },
+    {
+      "value": "CC.SS.",
+      "count": 2
+    },
+    {
+      "value": "CCSS DOC NO UNIV CAE",
+      "count": 10
+    },
+    {
+      "value": "FALLECIMIENTO",
+      "count": 1
+    },
+    {
+      "value": "LICENCIA",
+      "count": 6
+    },
+    {
+      "value": "VACANTE",
+      "count": 231
+    }
+  ],
+  "territories": [
+    {
+      "th_id": "ARABA-ÁLAVA",
+      "th_name": "ARABA/ÁLAVA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "th_name": "BIZKAIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "th_name": "GIPUZKOA"
+    }
+  ],
+  "municipalities": [
+    {
+      "th_id": "ARABA-ÁLAVA",
+      "zona_id": "AYALA",
+      "municipio_id": "002",
+      "municipio_name": "AMURRIO"
+    },
+    {
+      "th_id": "ARABA-ÁLAVA",
+      "zona_id": "AYALA",
+      "municipio_id": "036",
+      "municipio_name": "LAUDIO/LLODIO"
+    },
+    {
+      "th_id": "ARABA-ÁLAVA",
+      "zona_id": "VITORIA-GASTEIZ",
+      "municipio_id": "059",
+      "municipio_name": "VITORIA-GASTEIZ"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ARRATIA",
+      "municipio_id": "036",
+      "municipio_name": "GALDAKAO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "BARAKALDO",
+      "municipio_id": "013",
+      "municipio_name": "BARAKALDO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "BILBAO",
+      "municipio_id": "020",
+      "municipio_name": "BILBAO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "BUSTURIALDEA",
+      "municipio_id": "046",
+      "municipio_name": "GERNIKA-LUMO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "BUSTURIALDEA",
+      "municipio_id": "914",
+      "municipio_name": "ARRATZU"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "DURANGALDEA",
+      "municipio_id": "003",
+      "municipio_name": "AMOREBIETA-ETXANO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "DURANGALDEA",
+      "municipio_id": "027",
+      "municipio_name": "DURANGO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "DURANGALDEA",
+      "municipio_id": "032",
+      "municipio_name": "ELORRIO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "DURANGALDEA",
+      "municipio_id": "034",
+      "municipio_name": "ERMUA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ENKARTERRI",
+      "municipio_id": "045",
+      "municipio_name": "GÜEÑES"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ENKARTERRI",
+      "municipio_id": "090",
+      "municipio_name": "BALMASEDA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ESKUINALDEA",
+      "municipio_id": "044",
+      "municipio_name": "GETXO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ESKUINALDEA",
+      "municipio_id": "054",
+      "municipio_name": "LEIOA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ESKUINALDEA",
+      "municipio_id": "077",
+      "municipio_name": "PLENTZIA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ESKUINALDEA",
+      "municipio_id": "902",
+      "municipio_name": "ERANDIO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "EZKERRALDEA",
+      "municipio_id": "078",
+      "municipio_name": "PORTUGALETE"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "EZKERRALDEA",
+      "municipio_id": "082",
+      "municipio_name": "SANTURTZI"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "EZKERRALDEA",
+      "municipio_id": "084",
+      "municipio_name": "SESTAO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "LEA-ARTIBAI",
+      "municipio_id": "073",
+      "municipio_name": "ONDARROA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "MEATZALDEA",
+      "municipio_id": "002",
+      "municipio_name": "ABANTO Y CIÉRVANA-AB"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "MEATZALDEA",
+      "municipio_id": "080",
+      "municipio_name": "VALLE DE TRÁPAGA-TRA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "NERBIOI",
+      "municipio_id": "011",
+      "municipio_name": "ARRIGORRIAGA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "NERBIOI",
+      "municipio_id": "015",
+      "municipio_name": "BASAURI"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "NERBIOI",
+      "municipio_id": "029",
+      "municipio_name": "ETXEBARRI"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "NERBIOI",
+      "municipio_id": "065",
+      "municipio_name": "UGAO-MIRABALLES"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "TXORIERRI",
+      "municipio_id": "069",
+      "municipio_name": "MUNGIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "ALTO DEBA",
+      "municipio_id": "013",
+      "municipio_name": "ARETXABALETA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "ALTO DEBA",
+      "municipio_id": "055",
+      "municipio_name": "ARRASATE / MONDRAGÓN"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "ALTO DEBA",
+      "municipio_id": "074",
+      "municipio_name": "BERGARA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO BIDASOA",
+      "municipio_id": "036",
+      "municipio_name": "HONDARRIBIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO BIDASOA",
+      "municipio_id": "045",
+      "municipio_name": "IRUN"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO DEBA",
+      "municipio_id": "030",
+      "municipio_name": "EIBAR"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO DEBA",
+      "municipio_id": "032",
+      "municipio_name": "ELGOIBAR"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO DEBA",
+      "municipio_id": "056",
+      "municipio_name": "MUTRIKU"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "DONOSTIA-SAN SEBASTIAN",
+      "municipio_id": "069",
+      "municipio_name": "DONOSTIA / SAN SEBAS"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "GOIERRI",
+      "municipio_id": "019",
+      "municipio_name": "BEASAIN"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "GOIERRI",
+      "municipio_id": "051",
+      "municipio_name": "LEGAZPI"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "GOIERRI",
+      "municipio_id": "076",
+      "municipio_name": "ORDIZIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "GOIERRI",
+      "municipio_id": "080",
+      "municipio_name": "ZUMARRAGA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "009",
+      "municipio_name": "ANDOAIN"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "040",
+      "municipio_name": "HERNANI"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "069",
+      "municipio_name": "DONOSTIA / SAN SEBAS"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "073",
+      "municipio_name": "USURBIL"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "902",
+      "municipio_name": "LASARTE-ORIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "RENTERIA",
+      "municipio_id": "064",
+      "municipio_name": "PASAIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "RENTERIA",
+      "municipio_id": "067",
+      "municipio_name": "ERRENTERIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "RENTERIA",
+      "municipio_id": "errenteria",
+      "municipio_name": "ERRENTERIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "TOLOSA",
+      "municipio_id": "071",
+      "municipio_name": "TOLOSA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "UROLA-COSTA",
+      "municipio_id": "017",
+      "municipio_name": "AZKOITIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "UROLA-COSTA",
+      "municipio_id": "018",
+      "municipio_name": "AZPEITIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "UROLA-COSTA",
+      "municipio_id": "081",
+      "municipio_name": "ZUMAIA"
+    }
+  ],
+  "localities": [
+    {
+      "th_id": "ARABA-ÁLAVA",
+      "zona_id": "AYALA",
+      "municipio_id": "002",
+      "localidad_id": "002",
+      "localidad_name": "AMURRIO"
+    },
+    {
+      "th_id": "ARABA-ÁLAVA",
+      "zona_id": "AYALA",
+      "municipio_id": "036",
+      "localidad_id": "036",
+      "localidad_name": "LAUDIO/LLODIO"
+    },
+    {
+      "th_id": "ARABA-ÁLAVA",
+      "zona_id": "VITORIA-GASTEIZ",
+      "municipio_id": "059",
+      "localidad_id": "059",
+      "localidad_name": "VITORIA-GASTEIZ"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ARRATIA",
+      "municipio_id": "036",
+      "localidad_id": "036",
+      "localidad_name": "GALDAKAO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "BARAKALDO",
+      "municipio_id": "013",
+      "localidad_id": "013",
+      "localidad_name": "BARAKALDO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "BILBAO",
+      "municipio_id": "020",
+      "localidad_id": "020",
+      "localidad_name": "BILBAO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "BUSTURIALDEA",
+      "municipio_id": "046",
+      "localidad_id": "046",
+      "localidad_name": "GERNIKA-LUMO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "BUSTURIALDEA",
+      "municipio_id": "914",
+      "localidad_id": "914",
+      "localidad_name": "ARRATZU"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "DURANGALDEA",
+      "municipio_id": "003",
+      "localidad_id": "003",
+      "localidad_name": "AMOREBIETA-ETXANO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "DURANGALDEA",
+      "municipio_id": "027",
+      "localidad_id": "027",
+      "localidad_name": "DURANGO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "DURANGALDEA",
+      "municipio_id": "032",
+      "localidad_id": "032",
+      "localidad_name": "ELORRIO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "DURANGALDEA",
+      "municipio_id": "034",
+      "localidad_id": "034",
+      "localidad_name": "ERMUA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ENKARTERRI",
+      "municipio_id": "045",
+      "localidad_id": "045",
+      "localidad_name": "GÜEÑES"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ENKARTERRI",
+      "municipio_id": "090",
+      "localidad_id": "090",
+      "localidad_name": "BALMASEDA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ESKUINALDEA",
+      "municipio_id": "044",
+      "localidad_id": "044",
+      "localidad_name": "GETXO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ESKUINALDEA",
+      "municipio_id": "054",
+      "localidad_id": "054",
+      "localidad_name": "LEIOA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ESKUINALDEA",
+      "municipio_id": "077",
+      "localidad_id": "077",
+      "localidad_name": "PLENTZIA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "ESKUINALDEA",
+      "municipio_id": "902",
+      "localidad_id": "902",
+      "localidad_name": "ERANDIO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "EZKERRALDEA",
+      "municipio_id": "078",
+      "localidad_id": "078",
+      "localidad_name": "PORTUGALETE"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "EZKERRALDEA",
+      "municipio_id": "082",
+      "localidad_id": "082",
+      "localidad_name": "SANTURTZI"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "EZKERRALDEA",
+      "municipio_id": "084",
+      "localidad_id": "084",
+      "localidad_name": "SESTAO"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "LEA-ARTIBAI",
+      "municipio_id": "073",
+      "localidad_id": "073",
+      "localidad_name": "ONDARROA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "MEATZALDEA",
+      "municipio_id": "002",
+      "localidad_id": "002",
+      "localidad_name": "ABANTO Y CIÉRVANA-AB"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "MEATZALDEA",
+      "municipio_id": "080",
+      "localidad_id": "080",
+      "localidad_name": "VALLE DE TRÁPAGA-TRA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "NERBIOI",
+      "municipio_id": "011",
+      "localidad_id": "011",
+      "localidad_name": "ARRIGORRIAGA"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "NERBIOI",
+      "municipio_id": "015",
+      "localidad_id": "015",
+      "localidad_name": "BASAURI"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "NERBIOI",
+      "municipio_id": "029",
+      "localidad_id": "029",
+      "localidad_name": "ETXEBARRI"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "NERBIOI",
+      "municipio_id": "065",
+      "localidad_id": "065",
+      "localidad_name": "UGAO-MIRABALLES"
+    },
+    {
+      "th_id": "BIZKAIA",
+      "zona_id": "TXORIERRI",
+      "municipio_id": "069",
+      "localidad_id": "069",
+      "localidad_name": "MUNGIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "ALTO DEBA",
+      "municipio_id": "013",
+      "localidad_id": "013",
+      "localidad_name": "ARETXABALETA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "ALTO DEBA",
+      "municipio_id": "055",
+      "localidad_id": "055",
+      "localidad_name": "ARRASATE / MONDRAGÓN"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "ALTO DEBA",
+      "municipio_id": "074",
+      "localidad_id": "074",
+      "localidad_name": "BERGARA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO BIDASOA",
+      "municipio_id": "036",
+      "localidad_id": "036",
+      "localidad_name": "HONDARRIBIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO BIDASOA",
+      "municipio_id": "045",
+      "localidad_id": "045",
+      "localidad_name": "IRUN"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO DEBA",
+      "municipio_id": "030",
+      "localidad_id": "030",
+      "localidad_name": "EIBAR"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO DEBA",
+      "municipio_id": "032",
+      "localidad_id": "032",
+      "localidad_name": "ELGOIBAR"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "BAJO DEBA",
+      "municipio_id": "056",
+      "localidad_id": "056",
+      "localidad_name": "MUTRIKU"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "DONOSTIA-SAN SEBASTIAN",
+      "municipio_id": "069",
+      "localidad_id": "069",
+      "localidad_name": "DONOSTIA / SAN SEBAS"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "GOIERRI",
+      "municipio_id": "019",
+      "localidad_id": "019",
+      "localidad_name": "BEASAIN"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "GOIERRI",
+      "municipio_id": "051",
+      "localidad_id": "051",
+      "localidad_name": "LEGAZPI"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "GOIERRI",
+      "municipio_id": "076",
+      "localidad_id": "076",
+      "localidad_name": "ORDIZIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "GOIERRI",
+      "municipio_id": "080",
+      "localidad_id": "080",
+      "localidad_name": "ZUMARRAGA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "009",
+      "localidad_id": "009",
+      "localidad_name": "ANDOAIN"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "040",
+      "localidad_id": "040",
+      "localidad_name": "HERNANI"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "069",
+      "localidad_id": "069",
+      "localidad_name": "DONOSTIA / SAN SEBAS"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "073",
+      "localidad_id": "073",
+      "localidad_name": "USURBIL"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "LASARTE",
+      "municipio_id": "902",
+      "localidad_id": "902",
+      "localidad_name": "LASARTE-ORIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "RENTERIA",
+      "municipio_id": "064",
+      "localidad_id": "064",
+      "localidad_name": "PASAIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "RENTERIA",
+      "municipio_id": "067",
+      "localidad_id": "067",
+      "localidad_name": "ERRENTERIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "RENTERIA",
+      "municipio_id": "errenteria",
+      "localidad_id": "errenteria",
+      "localidad_name": "ERRENTERIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "TOLOSA",
+      "municipio_id": "071",
+      "localidad_id": "071",
+      "localidad_name": "TOLOSA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "UROLA-COSTA",
+      "municipio_id": "017",
+      "localidad_id": "017",
+      "localidad_name": "AZKOITIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "UROLA-COSTA",
+      "municipio_id": "018",
+      "localidad_id": "018",
+      "localidad_name": "AZPEITIA"
+    },
+    {
+      "th_id": "GIPUZKOA",
+      "zona_id": "UROLA-COSTA",
+      "municipio_id": "081",
+      "localidad_id": "081",
+      "localidad_name": "ZUMAIA"
+    }
+  ],
+  "subjects": [
+    {
+      "specialty_code": "237",
+      "specialty_name": "INFORMATICA",
+      "count": 221
+    },
+    {
+      "specialty_code": "1910",
+      "specialty_name": "INFORMATICA EN INGLES",
+      "count": 6
+    },
+    {
+      "specialty_code": "1585",
+      "specialty_name": "EPA AMBITO CIENTIFICO-TECNOLOGICO",
+      "count": 25
+    },
+    {
+      "specialty_code": "1960",
+      "specialty_name": "INFORMATICA EN FRANCES",
+      "count": 0
+    }
+  ],
+  "missing_coordinates": [],
+  "sources": [
+    "lista_de_plazas_definitiva.xlsx",
+    "lista_de_personas.xlsx",
+    "order.pdf",
+    "bopv-20260306.pdf",
+    "tmp/pdfs/rpt_26_27.pdf",
+    "tmp/pdfs/listado_especialidades_ope_2026.pdf",
+    "silvia_accessible_observaciones_classified.csv",
+    "https://tknika.eus/en/about-tknika/contact/"
+  ]
+}
